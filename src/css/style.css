@@ -2,23 +2,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.hover-underline {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    writing-mode: vertical-rl;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 2px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: height .3s;
+}
+
+.hover-underline:hover::after {
+    height: 120%;
 }
 
 @media screen and (min-width: 768px) {
 
-    #main-content{
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
         margin-left: 5vw;
     }
 
     footer{
         position: absolute;
         bottom: 0;
-        margin-left: 5vw;
     }
+
 }
