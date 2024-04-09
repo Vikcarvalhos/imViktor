@@ -4,9 +4,6 @@ function Home(){
 
     return(
         <>
-            <div className='produtos'>
-                Oi
-            </div>
         </>
     )
 }
