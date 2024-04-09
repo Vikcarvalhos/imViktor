@@ -1,4 +1,5 @@
 import '../css/style.css'
+import '../css/home.css'
 import { motion } from "framer-motion"
 
 function Home(){
